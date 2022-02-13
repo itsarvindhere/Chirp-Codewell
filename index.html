@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;800;900&display=swap');
+        </style>
+    <title>Document</title>
+</head>
+<body class="font-['Inter']">
+    <div class="bg-[#fbf8f3] px-5 sm:px-0">
+    <div class="container lg:px-10 xl:px-20 mx-auto pt-10">
+        <!-- NAVBAR SECTION -->
+        <nav class="flex items-center">
+            <h1 class="text-[#3180f5] italic font-bold text-xl mr-auto">Chirp.</h1>
+            <ul class="hidden sm:flex gap-6 items-center">
+                <li class="text-[#7e7e7d] font-medium"><a href="#">Home</a></li>
+                <li class="text-[#7e7e7d] font-medium"><a href="#">Pricing</a></li>
+                <li class="text-[#7e7e7d] font-medium"><a href="#">FAQ</a></li>
+                <button class="flex items-center bg-[#1ea1f2] text-white font-medium px-6 py-3 rounded"><img  class="mr-2 w-[20px]" src="./Assets/Twitter.svg" />Sign in with Twitter</button>
+            </ul>
+            <img class="block sm:hidden" src="./Assets/Hamburger Menu.svg"/>
+        </nav>
+
+        <!-- HEADER SECTION -->
+        <header class="flex flex-col-reverse lg:flex-row gap-10 py-10">
+            <!-- LEFT SIDE -->
+            <div class="lg:w-[50%] flex flex-col gap-6">
+                <h2 class="font-bold text-4xl sm:text-6xl sm:mt-20 leading-tight">Twitter analytics taken to a whole new level.</h2>
+                <p class="text-[#737373] text-lg">Chirp is a suite of Twitter analytics that will help you better understand your audience, which tweets they like, and most importantly, when they are the most active on Twitter.</p>
+                <!-- BUTTONS -->
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <button class="flex w-full sm:w-auto items-center justify-center bg-[#1ea1f2] text-white font-medium px-6 py-3 rounded"><img  class="mr-2 w-[20px]" src="./Assets/Twitter.svg" />Sign in with Twitter</button>
+                    <a class="text-[#2e819e] font-bold text-lg">Learn more &#8594;</a>
+                </div>
+                <!-- USER AVATARS -->
+                <div class="flex flex-row-reverse justify-end">
+                    <img 
+                    class="ml-[-20px] z-[9]" 
+                    src="./Assets/userAvatar01.svg" />
+                    <img class="ml-[-20px] z-[8]" src="./Assets/userAvatar02.svg" />
+                    <img class="ml-[-20px] z-[7]" src="./Assets/userAvatar03.svg" />
+                    <img class="ml-[-20px] z-[6]" src="./Assets/userAvatar04.svg" />
+                    <img class="ml-[-20px] z-[5]" src="./Assets/userAvatar05.svg" />
+                    <img class="ml-[-20px] z-[4]" src="./Assets/userAvatar06.svg" />
+                    <img class="ml-[-20px] z-[3]" src="./Assets/userAvatar07.svg" />
+                    <img class="ml-[-20px] z-[2]" src="./Assets/userAvatar08.svg" />
+                    <img class="z-[1]" src="./Assets/userAvatar09.svg" />
+                </div>
+                <!-- Last Line -->
+                <p class="text-[#7e7e7d] text-lg font-medium w-[70%]">Join <span class="text-[#2e819e]">195</span> others who have analyzed their followers and scheduled <span class="text-[#2e819e]">1342 </span>tweets!</p>
+                
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="lg:w-[450px] mx-auto lg:ml-auto">
+                <img class="block md:hidden lg:block" src="./Assets/Hero Image (Desktop View).png" />
+                <img class="hidden md:block lg:hidden" src="./Assets/Hero Image (Tablet View).png" />
+            </div>
+        </header>
+    </div>
+    </div>
+         <!-- FEATURES -->
+    <div class="container mx-auto py-20 px-5 sm:px-0">
+     <h3 class="text-4xl font-bold sm:w-[450px]">Features that help you Tweet smarter.</h3>
+     <div class="grid gap-10 lg:grid-cols-2 mt-10">
+        <div class="flex flex-col gap-2 p-5 border border-[#e1e1e1] rounded">
+            <img src="./Assets/analysis.png" class="w-[40px]"/>
+            <h4 class="text-lg font-bold">Analytics</h4>
+            <p class="text-[#737373] text-lg">We constantly monitor your audience as it grows - so you can Tweet when your followers are most likely to be online and ready to engage with your content.</p>
+        </div>
+
+        <div  class="flex flex-col gap-2 p-5 border border-[#e1e1e1] rounded">
+            <img src="./Assets/emoji.png" class="w-[40px]"/>
+            <h4 class="text-lg font-bold">Smart Analyzer</h4>
+            <p  class="text-[#737373] text-lg">Chirp automatically recognizes your followers' most active times and automatically sends you notifications if you're missign out on an opportunity.</p>
+        </div>
+
+        <div  class="flex flex-col gap-2 p-5 border border-[#e1e1e1] rounded">
+            <img src="./Assets/schedule.png" class="w-[40px]"/>
+            <h4 class="text-lg font-bold">Schedule your Tweets</h4>
+            <p  class="text-[#737373] text-lg">Quality tweets drive tons of engagement. With Chirp, you can write tweets in advance and schedule them when your audience is most likely to read.</p>
+        </div>
+
+        <div  class="flex flex-col gap-2 p-5 border border-[#e1e1e1] rounded">
+            <img src="./Assets/sun.png" class="w-[40px]"/>
+            <h4 class="text-lg font-bold">Dark Mode</h4>
+            <p  class="text-[#737373] text-lg">Friendly on the eyes, no matter what time you write your Tweets. All colors are chosent to make sure your eyes are at ease all the times.</p>
+        </div>
+     </div>
+    </div>
+
+    <!-- CUSTOMERS REVIEWS -->
+    <div class="bg-[#d7f5f5] px-5 sm:px-0">
+        <div class="container mx-auto py-20">
+            <h3 class="text-start text-4xl font-bold sm:w-[450px]">What our customers say</h3>
+            <div class="flex flex-col md:flex-row gap-5 items-center md:items-start mt-10">
+                <!-- FIRST REVIEW -->
+                <div class="flex flex-col gap-4 bg-white p-5 rounded sm:w-[70%] md:w-[33%]">
+                    <!-- User Image, Name, Username and Twitter logo -->
+                    <div class="flex">
+                        <div class="flex">
+                            <div class="flex">
+                                <img src="./Assets/userAvatar01.svg"/>
+                                <div class="flex flex-col ml-2">
+                                    <h5 class="font-bold">Sara May</h5>
+                                    <p class="text-[#7e7e7d] text-sm">@sara_may</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <img class="ml-auto" src="./Assets/Twitter (Blue).svg" alt="Twitter Logo">
+                    </div>
+                    <!-- USER REVIEW -->
+                    <p class="text-[#7e7e7d] text-lg">I just tried out @chirp and it's amazing, love all the analytics I can see.</p>
+                    <!-- Likes and Date -->
+                    <div class="flex text-[#7e7e7d]">
+                        <div class="flex">
+                            <img src="./Assets/Like.svg"/>
+                            <span class="ml-2">2</span>
+                        </div>
+                        <p class="ml-auto">March 2, 2021</p>
+                    </div>
+                </div>
+
+                <!-- SECOND REVIEW -->
+                <div class="flex flex-col gap-4 bg-white p-5 rounded sm:w-[70%] md:w-[33%]">
+                    <!-- User Image, Name, Username and Twitter logo -->
+                    <div class="flex">
+                        <div class="flex">
+                            <div class="flex">
+                                <img src="./Assets/userAvatar04.svg"/>
+                                <div class="flex flex-col ml-2">
+                                    <h5 class="font-bold">Jack Scott</h5>
+                                    <p class="text-[#7e7e7d] text-sm">@jackscott_</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <img class="ml-auto" src="./Assets/Twitter (Blue).svg" alt="Twitter Logo">
+                    </div>
+                    <!-- USER REVIEW -->
+                    <p class="text-[#7e7e7d] text-lg">I initially started using Chirp to support the co-founded as I personally knew him, but after having tried it out for a few weeks, I can genuinely say this changed my Twitter game.</p>
+                    <!-- Likes and Date -->
+                    <div class="flex text-[#7e7e7d]">
+                        <div class="flex">
+                            <img src="./Assets/Like.svg"/>
+                            <span class="ml-2">32</span>
+                        </div>
+                        <p class="ml-auto">March 2, 2021</p>
+                    </div>
+                </div>
+
+
+                <!-- THIRD REVIEW -->
+                <div class="flex flex-col gap-4 bg-white p-5 rounded sm:w-[70%] md:w-[33%]">
+                    <!-- User Image, Name, Username and Twitter logo -->
+                    <div class="flex">
+                        <div class="flex">
+                            <div class="flex">
+                                <img src="./Assets/userAvatar02.svg"/>
+                                <div class="flex flex-col ml-2">
+                                    <h5 class="font-bold">Jessica May</h5>
+                                    <p class="text-[#7e7e7d] text-sm">@jmay98_</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <img class="ml-auto" src="./Assets/Twitter (Blue).svg" alt="Twitter Logo">
+                    </div>
+                    <!-- USER REVIEW -->
+                    <p class="text-[#7e7e7d] text-lg">Absolutely love everything about Chirp, from the design to how everything works smoothly.</p>
+                    <!-- Likes and Date -->
+                    <div class="flex text-[#7e7e7d]">
+                        <div class="flex">
+                            <img src="./Assets/Like.svg"/>
+                            <span class="ml-2">221</span>
+                        </div>
+                        <p class="ml-auto">March 2, 2021</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRICING -->
+    <div class="container sm:w-[550px] mx-auto py-20 px-5 sm:px-0">
+        <h3 class="text-4xl font-bold text-center mb-2">One simple price plan.</h3>
+        <p class="text-[#7e7e7d] text-lg text-center mb-10">Start growing your Twitter account by analyzing your follower's patterns.</p>
+        <!-- PRICE CARD -->
+        <div class="border border-[#fdd695] rounded rounded-xl bg-[#fbf8f3] px-4 sm:px-10 py-10 flex flex-col gap-2">
+            <p class="text-[#7e7e7d] text-2xl">Monthly</p>
+            <p class="text-5xl font-bold">$9<span class="text-[#7e7e7d] text-2xl font-normal">/mo</span></p>
+            <ul class="border-y py-4 mt-4 flex flex-col gap-4">
+                <li class="flex text-[#7e7e7d] text-md sm:text-lg"><img src="./Assets/Checkmark.svg" class="mr-4">Unlimited* scheduled tweets and threads.</li>
+                <li class="flex text-[#7e7e7d] text-md sm:text-lg"><img src="./Assets/Checkmark.svg" class="mr-4">Schedule up to 3 weeks in advance.</li>
+                <li class="flex text-[#7e7e7d] text-md sm:text-lg"><img src="./Assets/Checkmark.svg" class="mr-4">Real-time audience analytics tracking up to 5K folowers.</li>
+            </ul>
+            <button class="flex justify-center items-center bg-[#1ea1f2] text-white font-medium px-6 py-3 rounded text-[12px] sm:text-[1rem] mt-4"><img  class="mr-2 w-[20px]" src="./Assets/Twitter.svg" />Start Trial with Twitter</button>
+        </div>
+        
+    </div>
+
+    <!-- FOOTER -->
+    <div class="bg-[#d7f5f5] px-5 sm:px-0">
+        <div class="container mx-auto py-10">
+            <footer class="flex flex-col gap-2 sm:gap-0 sm:flex-row">
+                <h1 class="text-[#3180f5] italic font-bold text-xl mr-auto">Chirp.</h1>
+            <ul class="flex gap-6 items-center">
+                <li><a href="#"><img src="./Assets/Twitter (Black).svg" /></a></li>
+                <li class="font-medium text-lg"><a href="#">Privacy Policy</a></li>
+                <li class="font-medium text-lg"><a href="#">Terms of use</a></li>
+            </ul>
+            </footer>
+        </div>
+    </div>
+
+    
+</body>
+</html>
